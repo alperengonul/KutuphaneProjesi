@@ -53,6 +53,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +89,8 @@
             // 
             // personelİşlemleriToolStripMenuItem
             // 
+            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personelListelemeToolStripMenuItem});
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
@@ -331,6 +334,13 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,5 +400,6 @@
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
     }
 }
