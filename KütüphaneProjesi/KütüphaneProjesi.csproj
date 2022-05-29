@@ -236,6 +236,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\cloud-upload-a30f385a928e44e199a62210d578375a.jpg" />
+    <None Include="Resources\pngfind.com-admin-icon-png-5286002.png" />
+    <None Include="Resources\prsonel.png" />
     <None Include="Resources\cloud-upload-a30f385a928e44e199a62210d578375a1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
