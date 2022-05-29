@@ -80,7 +80,7 @@ namespace KütüphaneProjesi
             {
                 if (txtüyeadsoyad.Text != "" && txttc.Text != "" && txttel.Text != "" && txtemail.Text != "" && txtyaş.Text != "" && txtadres.Text != "")
                 {
-                    string sorgu = "INSERT INTO personelbilgileri(AdSoyad,TcNo,TelefonNumarası,Email,Yaş,Adres,Cinsiyet)VALUES(@AdSoyad,@TcNo,@TelefonNumarası,@Email,@Yaş,@Adres,@Cinsiyet)";
+                    string sorgu = "INSERT INTO personelbilgileri(AdSoyad,TcNo,TelefonNumarası,Email,Yaş,Adres,Cinsiyet,gorev)VALUES(@AdSoyad,@TcNo,@TelefonNumarası,@Email,@Yaş,@Adres,@Cinsiyet,@gorev)";
                     cmd = new OleDbCommand(sorgu, bgl.bagla());
                     cmd.Parameters.AddWithValue("@AdSoyad", txtüyeadsoyad.Text);
                     cmd.Parameters.AddWithValue("@TcNo", txttc.Text);

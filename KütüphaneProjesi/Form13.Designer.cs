@@ -154,7 +154,7 @@ namespace KütüphaneProjesi
             this.btnuyeekle.Name = "btnuyeekle";
             this.btnuyeekle.Size = new System.Drawing.Size(204, 46);
             this.btnuyeekle.TabIndex = 114;
-            this.btnuyeekle.Text = "Üye Ekle";
+            this.btnuyeekle.Text = "Personel ekle";
             this.btnuyeekle.UseVisualStyleBackColor = false;
             this.btnuyeekle.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -184,6 +184,7 @@ namespace KütüphaneProjesi
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // lbltc
             // 
@@ -223,30 +224,35 @@ namespace KütüphaneProjesi
             this.istatistiklerToolStripMenuItem.Name = "istatistiklerToolStripMenuItem";
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
+            this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
             // 
             // emanetKitapİşlemleriToolStripMenuItem
             // 
             this.emanetKitapİşlemleriToolStripMenuItem.Name = "emanetKitapİşlemleriToolStripMenuItem";
             this.emanetKitapİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(136, 20);
             this.emanetKitapİşlemleriToolStripMenuItem.Text = "Emanet Kitap İşlemleri";
+            this.emanetKitapİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.emanetKitapİşlemleriToolStripMenuItem_Click);
             // 
             // kitapİşlemleriToolStripMenuItem
             // 
             this.kitapİşlemleriToolStripMenuItem.Name = "kitapİşlemleriToolStripMenuItem";
             this.kitapİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.kitapİşlemleriToolStripMenuItem.Text = "Kitap İşlemleri";
+            this.kitapİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.kitapİşlemleriToolStripMenuItem_Click);
             // 
             // üyeİşlemleriToolStripMenuItem
             // 
             this.üyeİşlemleriToolStripMenuItem.Name = "üyeİşlemleriToolStripMenuItem";
             this.üyeİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.üyeİşlemleriToolStripMenuItem.Text = "Üye İşlemleri";
+            this.üyeİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.üyeİşlemleriToolStripMenuItem_Click);
             // 
             // anasayfaToolStripMenuItem
             // 
             this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
             this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
+            this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
             // lblemail
             // 
@@ -292,9 +298,9 @@ namespace KütüphaneProjesi
             this.lblgorev.ForeColor = System.Drawing.Color.DarkOliveGreen;
             this.lblgorev.Location = new System.Drawing.Point(374, 330);
             this.lblgorev.Name = "lblgorev";
-            this.lblgorev.Size = new System.Drawing.Size(91, 25);
+            this.lblgorev.Size = new System.Drawing.Size(73, 25);
             this.lblgorev.TabIndex = 120;
-            this.lblgorev.Text = "Cinsiyet :";
+            this.lblgorev.Text = "Görev :";
             // 
             // comboBox1
             // 
@@ -302,8 +308,8 @@ namespace KütüphaneProjesi
             this.comboBox1.Font = new System.Drawing.Font("Calibri", 14.25F);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Bay",
-            "Bayan"});
+            "emanetçi",
+            "güvenlik"});
             this.comboBox1.Location = new System.Drawing.Point(313, 357);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 31);
