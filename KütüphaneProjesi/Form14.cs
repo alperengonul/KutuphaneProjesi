@@ -143,9 +143,9 @@ namespace KütüphaneProjesi
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
             textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtüyeadsoyad.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtüyeadsoyad.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
            
-            txtemail.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtemail.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
            
 
         }
@@ -204,6 +204,11 @@ namespace KütüphaneProjesi
             Form11 frm = new Form11();
             this.Hide();
             frm.ShowDialog();
+        }
+
+        private void Form14_Load(object sender, EventArgs e)
+        {
+            üyelistesi();
         }
     }
 }

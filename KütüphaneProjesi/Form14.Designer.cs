@@ -144,6 +144,7 @@ namespace KütüphaneProjesi
             this.btnsil.TabIndex = 141;
             this.btnsil.Text = "Üye Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnguncelle
             // 
@@ -156,6 +157,7 @@ namespace KütüphaneProjesi
             this.btnguncelle.TabIndex = 140;
             this.btnguncelle.Text = "Üye Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtemail
             // 
@@ -204,48 +206,56 @@ namespace KütüphaneProjesi
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(725, 278);
             this.dataGridView1.TabIndex = 127;
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // istatistiklerToolStripMenuItem
             // 
             this.istatistiklerToolStripMenuItem.Name = "istatistiklerToolStripMenuItem";
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
+            this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
             // 
             // emanetKitapİşlemleriToolStripMenuItem
             // 
             this.emanetKitapİşlemleriToolStripMenuItem.Name = "emanetKitapİşlemleriToolStripMenuItem";
             this.emanetKitapİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(136, 20);
             this.emanetKitapİşlemleriToolStripMenuItem.Text = "Emanet Kitap İşlemleri";
+            this.emanetKitapİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.emanetKitapİşlemleriToolStripMenuItem_Click);
             // 
             // kitapİşlemleriToolStripMenuItem
             // 
             this.kitapİşlemleriToolStripMenuItem.Name = "kitapİşlemleriToolStripMenuItem";
             this.kitapİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
             this.kitapİşlemleriToolStripMenuItem.Text = "Kitap İşlemleri";
+            this.kitapİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.kitapİşlemleriToolStripMenuItem_Click);
             // 
             // personelİşlemleriToolStripMenuItem
             // 
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // üyeİşlemleriToolStripMenuItem
             // 
             this.üyeİşlemleriToolStripMenuItem.Name = "üyeİşlemleriToolStripMenuItem";
             this.üyeİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.üyeİşlemleriToolStripMenuItem.Text = "Üye İşlemleri";
+            this.üyeİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.üyeİşlemleriToolStripMenuItem_Click);
             // 
             // anasayfaToolStripMenuItem
             // 
             this.anasayfaToolStripMenuItem.Name = "anasayfaToolStripMenuItem";
             this.anasayfaToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.anasayfaToolStripMenuItem.Text = "Anasayfa";
+            this.anasayfaToolStripMenuItem.Click += new System.EventHandler(this.anasayfaToolStripMenuItem_Click);
             // 
             // txtüyeadsoyad
             // 
@@ -294,6 +304,7 @@ namespace KütüphaneProjesi
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form14";
             this.Text = "Form14";
+            this.Load += new System.EventHandler(this.Form14_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
