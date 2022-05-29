@@ -32,6 +32,7 @@
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üyeİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,7 +61,7 @@
             this.lblcinsiyet = new System.Windows.Forms.Label();
             this.lblarama = new System.Windows.Forms.Label();
             this.txtarama = new System.Windows.Forms.TextBox();
-            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -98,11 +99,19 @@
             // personelİşlemleriToolStripMenuItem
             // 
             this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personelListelemeToolStripMenuItem});
+            this.personelListelemeToolStripMenuItem,
+            this.personelEklemeToolStripMenuItem});
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
             this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
             // 
             // kitapİşlemleriToolStripMenuItem
             // 
@@ -406,12 +415,12 @@
             this.txtarama.TabIndex = 124;
             this.txtarama.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // personelListelemeToolStripMenuItem
+            // personelEklemeToolStripMenuItem
             // 
-            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
-            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
-            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
+            this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
             // 
             // Form4
             // 
@@ -490,5 +499,6 @@
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
     }
 }

@@ -32,6 +32,7 @@
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üyeİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelİşlemleriToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,7 +49,7 @@
             this.txtkitapadi = new System.Windows.Forms.TextBox();
             this.lblkitapadi = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,11 +87,19 @@
             // personelİşlemleriToolStripMenuItem1
             // 
             this.personelİşlemleriToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personelListelemeToolStripMenuItem});
+            this.personelListelemeToolStripMenuItem,
+            this.personelEklemeToolStripMenuItem});
             this.personelİşlemleriToolStripMenuItem1.Name = "personelİşlemleriToolStripMenuItem1";
             this.personelİşlemleriToolStripMenuItem1.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem1.Text = "Personel İşlemleri";
             this.personelİşlemleriToolStripMenuItem1.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem1_Click);
+            // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
             // 
             // personelİşlemleriToolStripMenuItem
             // 
@@ -240,12 +249,12 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // personelListelemeToolStripMenuItem
+            // personelEklemeToolStripMenuItem
             // 
-            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
-            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
-            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
+            this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
             // 
             // Form5
             // 
@@ -297,5 +306,6 @@
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
     }
 }

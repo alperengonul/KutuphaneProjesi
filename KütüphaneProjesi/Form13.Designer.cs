@@ -53,9 +53,10 @@ namespace KütüphaneProjesi
             this.txttc = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblgorev = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.TextBox();
-            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -296,11 +297,19 @@ namespace KütüphaneProjesi
             // personelİşlemleriToolStripMenuItem
             // 
             this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.personelListelemeToolStripMenuItem});
+            this.personelListelemeToolStripMenuItem,
+            this.personelEklemeToolStripMenuItem});
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
             this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
             // 
             // lblgorev
             // 
@@ -323,12 +332,12 @@ namespace KütüphaneProjesi
             this.comboBox1.Size = new System.Drawing.Size(207, 31);
             this.comboBox1.TabIndex = 119;
             // 
-            // personelListelemeToolStripMenuItem
+            // personelEklemeToolStripMenuItem
             // 
-            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
-            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
-            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
+            this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
             // 
             // Form13
             // 
@@ -392,5 +401,6 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
         private System.Windows.Forms.TextBox comboBox1;
         private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
     }
 }
