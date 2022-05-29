@@ -120,7 +120,7 @@
             this.lbluyesayisi.AutoSize = true;
             this.lbluyesayisi.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbluyesayisi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lbluyesayisi.Location = new System.Drawing.Point(215, 89);
+            this.lbluyesayisi.Location = new System.Drawing.Point(269, 90);
             this.lbluyesayisi.Name = "lbluyesayisi";
             this.lbluyesayisi.Size = new System.Drawing.Size(116, 90);
             this.lbluyesayisi.TabIndex = 49;
@@ -131,7 +131,7 @@
             this.lblkitapsayisi.AutoSize = true;
             this.lblkitapsayisi.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblkitapsayisi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblkitapsayisi.Location = new System.Drawing.Point(594, 89);
+            this.lblkitapsayisi.Location = new System.Drawing.Point(610, 90);
             this.lblkitapsayisi.Name = "lblkitapsayisi";
             this.lblkitapsayisi.Size = new System.Drawing.Size(116, 90);
             this.lblkitapsayisi.TabIndex = 51;
@@ -142,7 +142,7 @@
             this.lblemanetverilenkitapsayisi.AutoSize = true;
             this.lblemanetverilenkitapsayisi.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblemanetverilenkitapsayisi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblemanetverilenkitapsayisi.Location = new System.Drawing.Point(310, 294);
+            this.lblemanetverilenkitapsayisi.Location = new System.Drawing.Point(270, 290);
             this.lblemanetverilenkitapsayisi.Name = "lblemanetverilenkitapsayisi";
             this.lblemanetverilenkitapsayisi.Size = new System.Drawing.Size(116, 90);
             this.lblemanetverilenkitapsayisi.TabIndex = 53;
@@ -154,7 +154,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label5.Location = new System.Drawing.Point(77, 215);
+            this.label5.Location = new System.Drawing.Point(131, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 25);
             this.label5.TabIndex = 140;
@@ -166,7 +166,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label4.Location = new System.Drawing.Point(442, 215);
+            this.label4.Location = new System.Drawing.Point(458, 216);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 25);
             this.label4.TabIndex = 141;
@@ -178,7 +178,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label6.Location = new System.Drawing.Point(118, 406);
+            this.label6.Location = new System.Drawing.Point(78, 402);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(301, 25);
             this.label6.TabIndex = 142;
@@ -208,7 +208,7 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(48, 343);
+            this.dataGridView2.Location = new System.Drawing.Point(12, 294);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -224,7 +224,7 @@
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(84, 343);
+            this.dataGridView3.Location = new System.Drawing.Point(12, 247);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -242,7 +242,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(123, 270);
+            this.button3.Location = new System.Drawing.Point(83, 266);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 133);
             this.button3.TabIndex = 52;
@@ -258,7 +258,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(407, 65);
+            this.button2.Location = new System.Drawing.Point(423, 66);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(197, 133);
             this.button2.TabIndex = 50;
@@ -274,7 +274,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(28, 65);
+            this.button1.Location = new System.Drawing.Point(82, 66);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 133);
             this.button1.TabIndex = 45;
@@ -290,7 +290,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(447, 270);
+            this.button4.Location = new System.Drawing.Point(407, 266);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 133);
             this.button4.TabIndex = 45;
@@ -303,7 +303,7 @@
             this.lblpersonelsay.AutoSize = true;
             this.lblpersonelsay.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblpersonelsay.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblpersonelsay.Location = new System.Drawing.Point(634, 294);
+            this.lblpersonelsay.Location = new System.Drawing.Point(594, 290);
             this.lblpersonelsay.Name = "lblpersonelsay";
             this.lblpersonelsay.Size = new System.Drawing.Size(116, 90);
             this.lblpersonelsay.TabIndex = 49;
@@ -316,7 +316,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label2.Location = new System.Drawing.Point(496, 420);
+            this.label2.Location = new System.Drawing.Point(456, 416);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(175, 25);
             this.label2.TabIndex = 140;
