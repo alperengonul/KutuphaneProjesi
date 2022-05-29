@@ -23,30 +23,37 @@ namespace KütüphaneProjesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtkullaniciadi.Text != "" && txtsifre.Text != "")
-            {
-                string sorgu = "SELECT * FROM AdminGirişBilgileri where kullanıcıadı=@kullanıcıadı AND şifre=@şifre";
-                cmd = new OleDbCommand(sorgu, bgl.bagla());
-                cmd.Parameters.AddWithValue("@kullanıcıadı", txtkullaniciadi.Text);
-                cmd.Parameters.AddWithValue("@şifre", txtsifre.Text);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    Form2 frm = new Form2();
-                    this.Hide();
-                    frm.ShowDialog();
 
+            try
+            {
+                if (txtkullaniciadi.Text != "" && txtsifre.Text != "")
+                {
+                    string sorgu = "SELECT * FROM AdminGirişBilgileri where kullanıcıadı=@kullanıcıadı AND şifre=@şifre";
+                    cmd = new OleDbCommand(sorgu, bgl.bagla());
+                    cmd.Parameters.AddWithValue("@kullanıcıadı", txtkullaniciadi.Text);
+                    cmd.Parameters.AddWithValue("@şifre", txtsifre.Text);
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        Form2 frm = new Form2();
+                        this.Hide();
+                        frm.ShowDialog();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hatalı Bilgi. Tekrar Deneyiniz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Hatalı Bilgi. Tekrar Deneyiniz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(aciklama.Message, "Giriş işlemleri");          
             }
-            
         }
 
         private void Form1_Load(object sender, EventArgs e)
