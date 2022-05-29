@@ -46,7 +46,7 @@ namespace KütüphaneProjesi
         private void personelsayisi()
         {
             OleDbDataAdapter veri = new OleDbDataAdapter();
-            veri = new OleDbDataAdapter("SELECT * FROM personel", bgl.bagla());
+            veri = new OleDbDataAdapter("SELECT * FROM personelbilgileri", bgl.bagla());
             DataTable doldur = new DataTable();
             veri.Fill(doldur);
             dataGridView4.DataSource = doldur;
