@@ -76,31 +76,38 @@ namespace KütüphaneProjesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            if (txtüyeadsoyad.Text != "" && txttc.Text != "" && txttel.Text != "" && txtemail.Text != "" && txtyaş.Text != "" && txtadres.Text != "")
+            try
             {
-                string sorgu = "INSERT INTO ÜyeBilgileri(AdSoyad,TcNo,TelefonNumarası,Email,Yaş,Adres,Cinsiyet)VALUES(@AdSoyad,@TcNo,@TelefonNumarası,@Email,@Yaş,@Adres,@Cinsiyet)";
-                cmd = new OleDbCommand(sorgu, bgl.bagla());
-                cmd.Parameters.AddWithValue("@AdSoyad", txtüyeadsoyad.Text);
-                cmd.Parameters.AddWithValue("@TcNo", txttc.Text);
-                cmd.Parameters.AddWithValue("@TelefonNumarası", txttel.Text);
-                cmd.Parameters.AddWithValue("@Email", txtemail.Text);
-                cmd.Parameters.AddWithValue("@Yaş", txtyaş.Text);
-                cmd.Parameters.AddWithValue("@Adres", txtadres.Text);
-                cmd.Parameters.AddWithValue("@Cinsiyet", cmbcinsiyet.Text);
-                MessageBox.Show("Üye Başarıyla Eklenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmd.ExecuteNonQuery();
-                txtüyeadsoyad.Clear();
-                txttc.Clear();
-                txttel.Clear();
-                txtemail.Clear();
-                txtyaş.Clear();
-                txtadres.Clear();
-                txtüyeadsoyad.Focus();
+                if (txtüyeadsoyad.Text != "" && txttc.Text != "" && txttel.Text != "" && txtemail.Text != "" && txtyaş.Text != "" && txtadres.Text != "")
+                {
+                    string sorgu = "INSERT INTO ÜyeBilgileri(AdSoyad,TcNo,TelefonNumarası,Email,Yaş,Adres,Cinsiyet)VALUES(@AdSoyad,@TcNo,@TelefonNumarası,@Email,@Yaş,@Adres,@Cinsiyet)";
+                    cmd = new OleDbCommand(sorgu, bgl.bagla());
+                    cmd.Parameters.AddWithValue("@AdSoyad", txtüyeadsoyad.Text);
+                    cmd.Parameters.AddWithValue("@TcNo", txttc.Text);
+                    cmd.Parameters.AddWithValue("@TelefonNumarası", txttel.Text);
+                    cmd.Parameters.AddWithValue("@Email", txtemail.Text);
+                    cmd.Parameters.AddWithValue("@Yaş", txtyaş.Text);
+                    cmd.Parameters.AddWithValue("@Adres", txtadres.Text);
+                    cmd.Parameters.AddWithValue("@Cinsiyet", cmbcinsiyet.Text);
+                    MessageBox.Show("Üye Başarıyla Eklenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cmd.ExecuteNonQuery();
+                    txtüyeadsoyad.Clear();
+                    txttc.Clear();
+                    txttel.Clear();
+                    txtemail.Clear();
+                    txtyaş.Clear();
+                    txtadres.Clear();
+                    txtüyeadsoyad.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Üye işlemleri");
+
             }
         }
 
