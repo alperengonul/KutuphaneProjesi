@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     public partial class Form14 : Form
     {
@@ -150,35 +150,7 @@ namespace KütüphaneProjesi
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-
-
-                if (txtarama.Text == "")
-                {
-                    üyelistesi();
-                }
-                else
-                {
-                    string sorgu = "Select * from AdminGirişBilgileri where AdSoyad Like '%" + txtarama.Text + "%'";
-
-                    OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
-
-                    DataSet ds = new DataSet();
-
-                    adap.Fill(ds, "ÜyeBilgileri");
-
-                    this.dataGridView1.DataSource = ds.Tables[0];
-                }
-            }
-            catch (Exception aciklama)
-            {
-                MessageBox.Show(aciklama.Message, "Üye işlemleri");
-            }
-
-        }
+       
 
         private void üyeİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -209,6 +181,20 @@ namespace KütüphaneProjesi
         private void Form14_Load(object sender, EventArgs e)
         {
             üyelistesi();
+        }
+
+        private void personelEklemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 frm = new Form13();
+            this.Hide();
+            frm.ShowDialog();
+        }
+
+        private void personelEklemeToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form12 frm = new Form12();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

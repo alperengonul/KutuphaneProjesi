@@ -1,4 +1,4 @@
-﻿namespace KütüphaneProjesi
+﻿namespace Kutuphaneprojesi
 {
     partial class Form1
     {
@@ -97,7 +97,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::KütüphaneProjesi.Properties.Resources._138_1387775_login_to_do_whatever_you_want_login_icon;
+            this.pictureBox1.Image = global::Kutuphaneprojesi.Properties.Resources._138_1387775_login_to_do_whatever_you_want_login_icon;
             this.pictureBox1.Location = new System.Drawing.Point(120, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 209);

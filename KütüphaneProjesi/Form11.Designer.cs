@@ -1,5 +1,5 @@
 ﻿
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     partial class Form11
     {
@@ -146,7 +146,7 @@ namespace KütüphaneProjesi
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.Male_user_add_icon;
+            this.button3.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.Male_user_add_icon;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -163,7 +163,7 @@ namespace KütüphaneProjesi
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.note;
+            this.button1.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.note;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

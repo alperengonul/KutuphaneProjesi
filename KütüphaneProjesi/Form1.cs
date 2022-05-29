@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     public partial class Form1 : Form
     {

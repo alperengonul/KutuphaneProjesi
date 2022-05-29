@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
 
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     public partial class Form6 : Form
     {

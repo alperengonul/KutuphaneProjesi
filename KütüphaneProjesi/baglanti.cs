@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     class baglanti
     {

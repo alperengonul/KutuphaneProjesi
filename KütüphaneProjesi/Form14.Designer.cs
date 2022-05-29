@@ -1,5 +1,5 @@
 ﻿
-namespace KütüphaneProjesi
+namespace Kutuphaneprojesi
 {
     partial class Form14
     {
@@ -29,19 +29,12 @@ namespace KütüphaneProjesi
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblarama = new System.Windows.Forms.Label();
-            this.txtarama = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblkayit = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.lblnot = new System.Windows.Forms.Label();
-            this.btnsil = new System.Windows.Forms.Button();
             this.btnguncelle = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.lblemail = new System.Windows.Forms.Label();
             this.lbluyeadsoyad = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,54 +46,10 @@ namespace KütüphaneProjesi
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtüyeadsoyad = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblarama
-            // 
-            this.lblarama.AutoSize = true;
-            this.lblarama.BackColor = System.Drawing.Color.Transparent;
-            this.lblarama.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold);
-            this.lblarama.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblarama.Location = new System.Drawing.Point(523, 266);
-            this.lblarama.Name = "lblarama";
-            this.lblarama.Size = new System.Drawing.Size(193, 19);
-            this.lblarama.TabIndex = 150;
-            this.lblarama.Text = "Ad Soyada Göre Kayıt Ara";
-            // 
-            // txtarama
-            // 
-            this.txtarama.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtarama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.txtarama.Location = new System.Drawing.Point(512, 288);
-            this.txtarama.Name = "txtarama";
-            this.txtarama.Size = new System.Drawing.Size(204, 31);
-            this.txtarama.TabIndex = 149;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label10.Location = new System.Drawing.Point(566, 606);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(181, 25);
-            this.label10.TabIndex = 146;
-            this.label10.Text = "Kayıt Bulunmaktadır.";
-            // 
-            // lblkayit
-            // 
-            this.lblkayit.AutoSize = true;
-            this.lblkayit.BackColor = System.Drawing.Color.Transparent;
-            this.lblkayit.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
-            this.lblkayit.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblkayit.Location = new System.Drawing.Point(469, 606);
-            this.lblkayit.Name = "lblkayit";
-            this.lblkayit.Size = new System.Drawing.Size(69, 25);
-            this.lblkayit.TabIndex = 145;
-            this.lblkayit.Text = "Toplam";
             // 
             // label6
             // 
@@ -117,47 +66,22 @@ namespace KütüphaneProjesi
             // 
             this.textBox5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.textBox5.Location = new System.Drawing.Point(706, 103);
+            this.textBox5.Location = new System.Drawing.Point(708, 70);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(10, 31);
             this.textBox5.TabIndex = 143;
             this.textBox5.Visible = false;
-            // 
-            // lblnot
-            // 
-            this.lblnot.AutoSize = true;
-            this.lblnot.BackColor = System.Drawing.Color.Transparent;
-            this.lblnot.Font = new System.Drawing.Font("Calibri Light", 9F, System.Drawing.FontStyle.Bold);
-            this.lblnot.ForeColor = System.Drawing.Color.Black;
-            this.lblnot.Location = new System.Drawing.Point(502, 208);
-            this.lblnot.Name = "lblnot";
-            this.lblnot.Size = new System.Drawing.Size(214, 28);
-            this.lblnot.TabIndex = 142;
-            this.lblnot.Text = "Not: Üye silmek için listeden bir\r\nkayıt seçip üye sil butonuna basınız";
-            // 
-            // btnsil
-            // 
-            this.btnsil.BackColor = System.Drawing.Color.Red;
-            this.btnsil.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnsil.ForeColor = System.Drawing.Color.White;
-            this.btnsil.Location = new System.Drawing.Point(505, 147);
-            this.btnsil.Name = "btnsil";
-            this.btnsil.Size = new System.Drawing.Size(204, 46);
-            this.btnsil.TabIndex = 141;
-            this.btnsil.Text = "Üye Sil";
-            this.btnsil.UseVisualStyleBackColor = false;
-            this.btnsil.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnguncelle
             // 
             this.btnguncelle.BackColor = System.Drawing.Color.Green;
             this.btnguncelle.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnguncelle.ForeColor = System.Drawing.Color.White;
-            this.btnguncelle.Location = new System.Drawing.Point(505, 95);
+            this.btnguncelle.Location = new System.Drawing.Point(507, 62);
             this.btnguncelle.Name = "btnguncelle";
             this.btnguncelle.Size = new System.Drawing.Size(204, 46);
             this.btnguncelle.TabIndex = 140;
-            this.btnguncelle.Text = "Üye Güncelle";
+            this.btnguncelle.Text = "Admin Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = false;
             this.btnguncelle.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -193,22 +117,6 @@ namespace KütüphaneProjesi
             this.lbluyeadsoyad.Size = new System.Drawing.Size(126, 25);
             this.lbluyeadsoyad.TabIndex = 128;
             this.lbluyeadsoyad.Text = "Kullanıcı Adı :";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 325);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(725, 278);
-            this.dataGridView1.TabIndex = 127;
-            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
             // çıkışToolStripMenuItem
             // 
@@ -251,14 +159,16 @@ namespace KütüphaneProjesi
             // personelEklemeToolStripMenuItem
             // 
             this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
-            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personelEklemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
             // 
             // personelEklemeToolStripMenuItem1
             // 
             this.personelEklemeToolStripMenuItem1.Name = "personelEklemeToolStripMenuItem1";
-            this.personelEklemeToolStripMenuItem1.Size = new System.Drawing.Size(172, 22);
+            this.personelEklemeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.personelEklemeToolStripMenuItem1.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem1.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem1_Click);
             // 
             // üyeİşlemleriToolStripMenuItem
             // 
@@ -299,19 +209,29 @@ namespace KütüphaneProjesi
             this.menuStrip1.TabIndex = 126;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 175);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(725, 278);
+            this.dataGridView1.TabIndex = 127;
+            this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
+            // 
             // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(917, 635);
-            this.Controls.Add(this.lblarama);
-            this.Controls.Add(this.txtarama);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.lblkayit);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.lblnot);
-            this.Controls.Add(this.btnsil);
             this.Controls.Add(this.btnguncelle);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.lblemail);
@@ -322,29 +242,21 @@ namespace KütüphaneProjesi
             this.Name = "Form14";
             this.Text = "Form14";
             this.Load += new System.EventHandler(this.Form14_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblarama;
-        private System.Windows.Forms.TextBox txtarama;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblkayit;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label lblnot;
-        private System.Windows.Forms.Button btnsil;
         private System.Windows.Forms.Button btnguncelle;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Label lbluyeadsoyad;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem istatistiklerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem emanetKitapİşlemleriToolStripMenuItem;
@@ -356,5 +268,6 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace KütüphaneProjesi
+﻿namespace Kutuphaneprojesi
 {
     partial class Form7
     {

@@ -1,4 +1,4 @@
-﻿namespace KütüphaneProjesi
+﻿namespace Kutuphaneprojesi
 {
     partial class Form2
     {
@@ -244,7 +244,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.BackgroundImage = global::KütüphaneProjesi.Properties.Resources._1024px_Nuvola_apps_kchart_svg;
+            this.button4.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources._1024px_Nuvola_apps_kchart_svg;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -261,7 +261,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.borrow;
+            this.button3.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.borrow;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -278,7 +278,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.pngfind_com_admin_icon_png_5286002;
+            this.button6.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.pngfind_com_admin_icon_png_5286002;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -295,7 +295,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.books;
+            this.button2.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.books;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -312,7 +312,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.prsonel;
+            this.button5.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.prsonel;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -329,7 +329,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.people;
+            this.button1.BackgroundImage = global::Kutuphaneprojesi.Properties.Resources.people;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
