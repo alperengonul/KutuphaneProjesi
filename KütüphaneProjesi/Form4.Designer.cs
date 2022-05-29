@@ -59,6 +59,7 @@
             this.lblcinsiyet = new System.Windows.Forms.Label();
             this.lblarama = new System.Windows.Forms.Label();
             this.txtarama = new System.Windows.Forms.TextBox();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +69,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
@@ -394,6 +396,13 @@
             this.txtarama.TabIndex = 124;
             this.txtarama.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,5 +478,6 @@
         private System.Windows.Forms.Label lblarama;
         private System.Windows.Forms.TextBox txtarama;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

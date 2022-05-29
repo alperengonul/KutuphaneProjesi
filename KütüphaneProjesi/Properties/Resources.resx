@@ -124,17 +124,17 @@
   <data name="note" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\note.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1024px-Nuvola_apps_kchart.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1024px-Nuvola_apps_kchart.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="note1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\note1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="borrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\borrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon-of-book-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon-of-book-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kisspng-book-flat-design-books-5ac984c5e9ef33.3004996215231561659582" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kisspng-book-flat-design-books-5ac984c5e9ef33.3004996215231561659582.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,16 +151,19 @@
   <data name="Male-user-add-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Male-user-add-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="borrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\borrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1024px-Nuvola_apps_kchart.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Nuvola_apps_kchart.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exchange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="delivering" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\delivering.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="note1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\note1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exchange" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exchange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cloud-upload-a30f385a928e44e199a62210d578375a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cloud-upload-a30f385a928e44e199a62210d578375a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

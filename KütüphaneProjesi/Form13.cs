@@ -107,7 +107,7 @@ namespace KütüphaneProjesi
             }
             catch (Exception aciklama)
             {
-                MessageBox.Show(aciklama.Message, "Üye işlemleri");
+                MessageBox.Show(aciklama.Message, "personel işlemleri");
 
             }
         }
@@ -143,6 +143,13 @@ namespace KütüphaneProjesi
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void personelİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

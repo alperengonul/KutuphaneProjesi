@@ -54,6 +54,7 @@ namespace KütüphaneProjesi
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.lblgorev = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -280,13 +281,14 @@ namespace KütüphaneProjesi
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(603, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(875, 24);
             this.menuStrip1.TabIndex = 106;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -315,11 +317,18 @@ namespace KütüphaneProjesi
             this.comboBox1.Size = new System.Drawing.Size(207, 31);
             this.comboBox1.TabIndex = 121;
             // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
             // Form13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(603, 450);
+            this.ClientSize = new System.Drawing.Size(875, 450);
             this.Controls.Add(this.txttel);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblgorev);
@@ -375,5 +384,6 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label lblgorev;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

@@ -234,5 +234,9 @@
   <ItemGroup>
     <None Include="Resources\exchange.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\cloud-upload-a30f385a928e44e199a62210d578375a.jpg" />
+    <None Include="Resources\cloud-upload-a30f385a928e44e199a62210d578375a1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

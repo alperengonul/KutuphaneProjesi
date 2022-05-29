@@ -79,12 +79,13 @@ namespace KütüphaneProjesi
             {
                 if (txtkitapadi.Text != "" && txtyazari.Text != "" && txttürü.Text != "" && txtsayfasayısı.Text != "")
                 {
-                    string sorgu = "INSERT INTO KitapBilgileri(KitapAdı,Yazarı,Türü,SayfaSayısı)VALUES(@KitapAdı,@Yazarı,@Türü,@SayfaSayısı)";
+                    string sorgu = "INSERT INTO KitapBilgileri(KitapAdı,Yazarı,Türü,SayfaSayısı,Resim)VALUES(@KitapAdı,@Yazarı,@Türü,@SayfaSayısı,@rsm)";
                     cmd = new OleDbCommand(sorgu, bgl.bagla());
                     cmd.Parameters.AddWithValue("@KitapAdı", txtkitapadi.Text);
                     cmd.Parameters.AddWithValue("@Yazarı", txtyazari.Text);
                     cmd.Parameters.AddWithValue("@Türü", txttürü.Text);
                     cmd.Parameters.AddWithValue("@SayfaSayısı", txtsayfasayısı.Text);
+      
                     MessageBox.Show("Kitap Başarıyla Eklenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cmd.ExecuteNonQuery();
                 }
@@ -122,6 +123,25 @@ namespace KütüphaneProjesi
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dosyaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void personelİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
+        }
+
+        private void personelİşlemleriToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

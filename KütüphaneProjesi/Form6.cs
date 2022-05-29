@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.IO;
 
 namespace KütüphaneProjesi
 {
@@ -20,10 +21,21 @@ namespace KütüphaneProjesi
         private void kitaplistesi()
         {
             OleDbDataAdapter veri = new OleDbDataAdapter();
-            veri = new OleDbDataAdapter("SELECT * FROM KitapBilgileri", bgl.bagla());
-            DataTable doldur = new DataTable();
-            veri.Fill(doldur);
-            dataGridView1.DataSource = doldur;
+            //veri = new OleDbDataAdapter("SELECT id,KitapAdı,Yazarı,Türü,SayfaSayısı FROM KitapBilgileri", bgl.bagla());
+            //DataTable doldur = new DataTable();
+            //veri.Fill(doldur);
+            //dataGridView1.DataSource = doldur;
+           
+           
+            veri = new OleDbDataAdapter("SELECT Resim FROM KitapBilgileri", bgl.bagla());
+            DataTable dt = new DataTable();
+            veri.Fill(dt);
+            dt.Columns.Add("image", Type.GetType("System.Byte[]"));
+            foreach (DataRow item in dt.Rows)
+            {
+                item["image"] = File.ReadAllBytes(Application.StartupPath + item["Resim"].ToString());
+            }
+            dataGridView1.DataSource = dt;
             bgl.bagla().Close();
         }
         public Form6()
@@ -135,11 +147,12 @@ namespace KütüphaneProjesi
 
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-            textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txtkitapadi.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtyazari.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txttürü.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txtsayfasayisi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            //textBox5.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            //txtkitapadi.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            //txtyazari.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            //txttürü.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            //txtsayfasayisi.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -187,6 +200,13 @@ namespace KütüphaneProjesi
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void personelİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
         }
     }
 }

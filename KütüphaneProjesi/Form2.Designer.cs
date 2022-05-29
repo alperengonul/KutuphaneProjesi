@@ -50,6 +50,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,6 +59,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
@@ -291,6 +293,13 @@
             this.label1.Text = "PERSONEL İŞLEMLERİ";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,5 +354,6 @@
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

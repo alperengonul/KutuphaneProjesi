@@ -31,9 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üyeİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblbaslik = new System.Windows.Forms.Label();
             this.btnkitapekle = new System.Windows.Forms.Button();
             this.txtsayfasayısı = new System.Windows.Forms.TextBox();
@@ -44,7 +46,8 @@
             this.lblyazari = new System.Windows.Forms.Label();
             this.txtkitapadi = new System.Windows.Forms.TextBox();
             this.lblkitapadi = new System.Windows.Forms.Label();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.personelİşlemleriToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,13 +56,15 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem1,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(523, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(815, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -76,6 +81,13 @@
             this.üyeİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.üyeİşlemleriToolStripMenuItem.Text = "Üye İşlemleri";
             this.üyeİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.üyeİşlemleriToolStripMenuItem_Click);
+            // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // kitapİşlemleriToolStripMenuItem
             // 
@@ -98,13 +110,20 @@
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
             // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            // 
             // lblbaslik
             // 
             this.lblbaslik.AutoSize = true;
             this.lblbaslik.BackColor = System.Drawing.Color.Transparent;
             this.lblbaslik.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.lblbaslik.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblbaslik.Location = new System.Drawing.Point(146, 47);
+            this.lblbaslik.Location = new System.Drawing.Point(146, 60);
             this.lblbaslik.Name = "lblbaslik";
             this.lblbaslik.Size = new System.Drawing.Size(223, 25);
             this.lblbaslik.TabIndex = 111;
@@ -127,7 +146,7 @@
             // 
             this.txtsayfasayısı.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtsayfasayısı.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.txtsayfasayısı.Location = new System.Drawing.Point(151, 316);
+            this.txtsayfasayısı.Location = new System.Drawing.Point(151, 329);
             this.txtsayfasayısı.Name = "txtsayfasayısı";
             this.txtsayfasayısı.Size = new System.Drawing.Size(207, 31);
             this.txtsayfasayısı.TabIndex = 109;
@@ -138,7 +157,7 @@
             this.lblsayfasayisi.BackColor = System.Drawing.Color.Transparent;
             this.lblsayfasayisi.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.lblsayfasayisi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblsayfasayisi.Location = new System.Drawing.Point(182, 289);
+            this.lblsayfasayisi.Location = new System.Drawing.Point(182, 302);
             this.lblsayfasayisi.Name = "lblsayfasayisi";
             this.lblsayfasayisi.Size = new System.Drawing.Size(129, 25);
             this.lblsayfasayisi.TabIndex = 108;
@@ -148,7 +167,7 @@
             // 
             this.txttürü.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txttürü.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.txttürü.Location = new System.Drawing.Point(151, 252);
+            this.txttürü.Location = new System.Drawing.Point(151, 265);
             this.txttürü.Name = "txttürü";
             this.txttürü.Size = new System.Drawing.Size(207, 31);
             this.txttürü.TabIndex = 107;
@@ -159,7 +178,7 @@
             this.lbltürü.BackColor = System.Drawing.Color.Transparent;
             this.lbltürü.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.lbltürü.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lbltürü.Location = new System.Drawing.Point(213, 225);
+            this.lbltürü.Location = new System.Drawing.Point(213, 238);
             this.lbltürü.Name = "lbltürü";
             this.lbltürü.Size = new System.Drawing.Size(64, 25);
             this.lbltürü.TabIndex = 106;
@@ -169,7 +188,7 @@
             // 
             this.txtyazari.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtyazari.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.txtyazari.Location = new System.Drawing.Point(151, 188);
+            this.txtyazari.Location = new System.Drawing.Point(151, 201);
             this.txtyazari.Name = "txtyazari";
             this.txtyazari.Size = new System.Drawing.Size(207, 31);
             this.txtyazari.TabIndex = 105;
@@ -180,7 +199,7 @@
             this.lblyazari.BackColor = System.Drawing.Color.Transparent;
             this.lblyazari.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.lblyazari.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblyazari.Location = new System.Drawing.Point(210, 160);
+            this.lblyazari.Location = new System.Drawing.Point(210, 173);
             this.lblyazari.Name = "lblyazari";
             this.lblyazari.Size = new System.Drawing.Size(77, 25);
             this.lblyazari.TabIndex = 104;
@@ -190,7 +209,7 @@
             // 
             this.txtkitapadi.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtkitapadi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
-            this.txtkitapadi.Location = new System.Drawing.Point(151, 124);
+            this.txtkitapadi.Location = new System.Drawing.Point(151, 137);
             this.txtkitapadi.Name = "txtkitapadi";
             this.txtkitapadi.Size = new System.Drawing.Size(207, 31);
             this.txtkitapadi.TabIndex = 103;
@@ -201,24 +220,28 @@
             this.lblkitapadi.BackColor = System.Drawing.Color.Transparent;
             this.lblkitapadi.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.lblkitapadi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblkitapadi.Location = new System.Drawing.Point(200, 96);
+            this.lblkitapadi.Location = new System.Drawing.Point(200, 109);
             this.lblkitapadi.Name = "lblkitapadi";
             this.lblkitapadi.Size = new System.Drawing.Size(101, 25);
             this.lblkitapadi.TabIndex = 102;
             this.lblkitapadi.Text = "Kitap Adı :";
             // 
-            // çıkışToolStripMenuItem
+            // openFileDialog1
             // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // personelİşlemleriToolStripMenuItem1
+            // 
+            this.personelİşlemleriToolStripMenuItem1.Name = "personelİşlemleriToolStripMenuItem1";
+            this.personelİşlemleriToolStripMenuItem1.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem1.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem1.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem1_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 445);
+            this.ClientSize = new System.Drawing.Size(815, 445);
             this.Controls.Add(this.lblbaslik);
             this.Controls.Add(this.btnkitapekle);
             this.Controls.Add(this.txtsayfasayısı);
@@ -260,5 +283,8 @@
         private System.Windows.Forms.TextBox txtkitapadi;
         private System.Windows.Forms.Label lblkitapadi;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem1;
     }
 }

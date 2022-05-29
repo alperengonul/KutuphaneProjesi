@@ -34,6 +34,7 @@
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblnot = new System.Windows.Forms.Label();
             this.btnsil = new System.Windows.Forms.Button();
             this.btnguncelle = new System.Windows.Forms.Button();
@@ -52,7 +53,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblarama = new System.Windows.Forms.Label();
             this.txtarama = new System.Windows.Forms.TextBox();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +63,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
@@ -106,6 +108,13 @@
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // lblnot
             // 
@@ -313,12 +322,12 @@
             this.txtarama.TabIndex = 145;
             this.txtarama.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // çıkışToolStripMenuItem
+            // personelİşlemleriToolStripMenuItem
             // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // Form6
             // 
@@ -383,5 +392,6 @@
         private System.Windows.Forms.Label lblarama;
         private System.Windows.Forms.TextBox txtarama;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

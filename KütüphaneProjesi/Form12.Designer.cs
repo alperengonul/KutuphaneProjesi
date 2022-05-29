@@ -62,6 +62,7 @@ namespace KütüphaneProjesi
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gorev = new System.Windows.Forms.Label();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -385,6 +386,7 @@ namespace KütüphaneProjesi
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
@@ -419,6 +421,13 @@ namespace KütüphaneProjesi
             this.gorev.Size = new System.Drawing.Size(73, 25);
             this.gorev.TabIndex = 151;
             this.gorev.Text = "Görev :";
+            // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // Form12
             // 
@@ -498,5 +507,6 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label gorev;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

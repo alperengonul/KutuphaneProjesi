@@ -34,6 +34,7 @@
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnuyeekle = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.lblemail = new System.Windows.Forms.Label();
@@ -50,7 +51,7 @@
             this.lblcinsiyet = new System.Windows.Forms.Label();
             this.cmbcinsiyet = new System.Windows.Forms.ComboBox();
             this.txttel = new System.Windows.Forms.MaskedTextBox();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,13 +60,14 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.anasayfaToolStripMenuItem,
             this.üyeİşlemleriToolStripMenuItem,
+            this.personelİşlemleriToolStripMenuItem,
             this.kitapİşlemleriToolStripMenuItem,
             this.emanetKitapİşlemleriToolStripMenuItem,
             this.istatistiklerToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(606, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(625, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -103,6 +105,13 @@
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // btnuyeekle
             // 
@@ -281,18 +290,18 @@
             this.txttel.Size = new System.Drawing.Size(207, 31);
             this.txttel.TabIndex = 105;
             // 
-            // çıkışToolStripMenuItem
+            // personelİşlemleriToolStripMenuItem
             // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 452);
+            this.ClientSize = new System.Drawing.Size(625, 452);
             this.Controls.Add(this.txttel);
             this.Controls.Add(this.cmbcinsiyet);
             this.Controls.Add(this.lblcinsiyet);
@@ -346,5 +355,6 @@
         private System.Windows.Forms.ComboBox cmbcinsiyet;
         private System.Windows.Forms.MaskedTextBox txttel;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
     }
 }

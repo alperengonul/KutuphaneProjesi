@@ -77,5 +77,12 @@ namespace KütüphaneProjesi
         {
             Application.Exit();
         }
+
+        private void personelİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }
