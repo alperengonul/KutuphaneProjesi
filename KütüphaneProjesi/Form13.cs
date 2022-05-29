@@ -158,5 +158,12 @@ namespace KütüphaneProjesi
             this.Hide();
             frm.ShowDialog();
         }
+
+        private void personelEklemeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 frm = new Form13();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }

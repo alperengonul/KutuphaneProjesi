@@ -51,6 +51,8 @@ namespace KütüphaneProjesi
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.txtüyeadsoyad = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.personelEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelEklemeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -231,6 +233,9 @@ namespace KütüphaneProjesi
             // 
             // personelİşlemleriToolStripMenuItem
             // 
+            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personelEklemeToolStripMenuItem,
+            this.personelEklemeToolStripMenuItem1});
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
@@ -271,6 +276,20 @@ namespace KütüphaneProjesi
             this.menuStrip1.Size = new System.Drawing.Size(917, 24);
             this.menuStrip1.TabIndex = 126;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // personelEklemeToolStripMenuItem
+            // 
+            this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
+            // 
+            // personelEklemeToolStripMenuItem1
+            // 
+            this.personelEklemeToolStripMenuItem1.Name = "personelEklemeToolStripMenuItem1";
+            this.personelEklemeToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem1.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem1.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem1_Click);
             // 
             // Form14
             // 
@@ -326,5 +345,7 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.ToolStripMenuItem anasayfaToolStripMenuItem;
         private System.Windows.Forms.TextBox txtüyeadsoyad;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem1;
     }
 }
