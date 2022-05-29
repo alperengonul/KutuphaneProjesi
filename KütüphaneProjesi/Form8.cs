@@ -43,6 +43,15 @@ namespace KütüphaneProjesi
             dataGridView3.DataSource = doldur;
             bgl.bagla().Close();
         }
+        private void personelsayisi()
+        {
+            OleDbDataAdapter veri = new OleDbDataAdapter();
+            veri = new OleDbDataAdapter("SELECT * FROM personel", bgl.bagla());
+            DataTable doldur = new DataTable();
+            veri.Fill(doldur);
+            dataGridView4.DataSource = doldur;
+            bgl.bagla().Close();
+        }
         public Form8()
         {
             InitializeComponent();
@@ -102,9 +111,11 @@ namespace KütüphaneProjesi
             üyelistesi();
             kitaplistesi();
             emanetkitaplistesi();
+            personelsayisi();
             lbluyesayisi.Text = dataGridView1.Rows.Count.ToString();
             lblkitapsayisi.Text = dataGridView2.Rows.Count.ToString();
             lblemanetverilenkitapsayisi.Text = dataGridView3.Rows.Count.ToString();
+           lblpersonelsay.Text= dataGridView4.Rows.Count.ToString();
         }
 
         private void üyeİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,6 +135,26 @@ namespace KütüphaneProjesi
         private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

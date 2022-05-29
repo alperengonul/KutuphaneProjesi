@@ -120,5 +120,17 @@ namespace KütüphaneProjesi
         {
             Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form11 frm = new Form11();
+            this.Hide();
+            frm.ShowDialog();
+        }
     }
 }

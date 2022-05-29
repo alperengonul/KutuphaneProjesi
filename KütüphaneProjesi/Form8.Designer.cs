@@ -34,6 +34,7 @@
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lbluyesayisi = new System.Windows.Forms.Label();
             this.lblkitapsayisi = new System.Windows.Forms.Label();
             this.lblemanetverilenkitapsayisi = new System.Windows.Forms.Label();
@@ -46,11 +47,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button4 = new System.Windows.Forms.Button();
+            this.lblpersonelsay = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -103,6 +108,13 @@
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
             // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            // 
             // lbluyesayisi
             // 
             this.lbluyesayisi.AutoSize = true;
@@ -130,7 +142,7 @@
             this.lblemanetverilenkitapsayisi.AutoSize = true;
             this.lblemanetverilenkitapsayisi.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblemanetverilenkitapsayisi.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.lblemanetverilenkitapsayisi.Location = new System.Drawing.Point(432, 294);
+            this.lblemanetverilenkitapsayisi.Location = new System.Drawing.Point(310, 294);
             this.lblemanetverilenkitapsayisi.Name = "lblemanetverilenkitapsayisi";
             this.lblemanetverilenkitapsayisi.Size = new System.Drawing.Size(116, 90);
             this.lblemanetverilenkitapsayisi.TabIndex = 53;
@@ -166,7 +178,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
             this.label6.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.label6.Location = new System.Drawing.Point(240, 406);
+            this.label6.Location = new System.Drawing.Point(118, 406);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(301, 25);
             this.label6.TabIndex = 142;
@@ -219,6 +231,7 @@
             this.dataGridView3.Size = new System.Drawing.Size(30, 41);
             this.dataGridView3.TabIndex = 145;
             this.dataGridView3.Visible = false;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // button3
             // 
@@ -229,7 +242,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(245, 270);
+            this.button3.Location = new System.Drawing.Point(123, 270);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 133);
             this.button3.TabIndex = 52;
@@ -268,29 +281,85 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // çıkışToolStripMenuItem
+            // button4
             // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::KütüphaneProjesi.Properties.Resources.people;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.Location = new System.Drawing.Point(447, 270);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(197, 133);
+            this.button4.TabIndex = 45;
+            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // lblpersonelsay
+            // 
+            this.lblpersonelsay.AutoSize = true;
+            this.lblpersonelsay.Font = new System.Drawing.Font("Comic Sans MS", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblpersonelsay.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.lblpersonelsay.Location = new System.Drawing.Point(634, 294);
+            this.lblpersonelsay.Name = "lblpersonelsay";
+            this.lblpersonelsay.Size = new System.Drawing.Size(116, 90);
+            this.lblpersonelsay.TabIndex = 49;
+            this.lblpersonelsay.Text = "17";
+            this.lblpersonelsay.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 12.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.DarkOliveGreen;
+            this.label2.Location = new System.Drawing.Point(496, 420);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(175, 25);
+            this.label2.TabIndex = 140;
+            this.label2.Text = "PERSONEL SAYISI";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(12, 406);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView4.Size = new System.Drawing.Size(30, 41);
+            this.dataGridView4.TabIndex = 145;
+            this.dataGridView4.Visible = false;
+            this.dataGridView4.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 478);
+            this.Controls.Add(this.dataGridView4);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblemanetverilenkitapsayisi);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.lblkitapsayisi);
             this.Controls.Add(this.button2);
+            this.Controls.Add(this.lblpersonelsay);
             this.Controls.Add(this.lbluyesayisi);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form8";
@@ -302,6 +371,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -328,5 +398,9 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label lblpersonelsay;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView dataGridView4;
     }
 }

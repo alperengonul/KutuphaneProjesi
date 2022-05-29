@@ -24,8 +24,7 @@ namespace KütüphaneProjesi
         private void button1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
+          
                 if (txtkullaniciadi.Text != "" && txtsifre.Text != "")
                 {
                     string sorgu = "SELECT * FROM AdminGirişBilgileri where kullanıcıadı=@kullanıcıadı AND şifre=@şifre";
@@ -49,11 +48,8 @@ namespace KütüphaneProjesi
                 {
                     MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-            }
-            catch (Exception aciklama)
-            {
-                MessageBox.Show(aciklama.Message, "Giriş işlemleri");          
-            }
+           
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
