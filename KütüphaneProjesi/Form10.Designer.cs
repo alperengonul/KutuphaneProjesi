@@ -39,11 +39,13 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.anasayfaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.üyeİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personelEklemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -189,6 +191,23 @@
             this.üyeİşlemleriToolStripMenuItem.Text = "Üye İşlemleri";
             this.üyeİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.üyeİşlemleriToolStripMenuItem_Click);
             // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personelListelemeToolStripMenuItem,
+            this.personelEklemeToolStripMenuItem});
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
+            // 
             // kitapİşlemleriToolStripMenuItem
             // 
             this.kitapİşlemleriToolStripMenuItem.Name = "kitapİşlemleriToolStripMenuItem";
@@ -216,12 +235,12 @@
             this.çıkışToolStripMenuItem.Text = "Çıkış";
             this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
-            // personelİşlemleriToolStripMenuItem
+            // personelEklemeToolStripMenuItem
             // 
-            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
-            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
-            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            this.personelEklemeToolStripMenuItem.Name = "personelEklemeToolStripMenuItem";
+            this.personelEklemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelEklemeToolStripMenuItem.Text = "Personel Ekleme";
+            this.personelEklemeToolStripMenuItem.Click += new System.EventHandler(this.personelEklemeToolStripMenuItem_Click);
             // 
             // Form10
             // 
@@ -265,5 +284,7 @@
         private System.Windows.Forms.ToolStripMenuItem istatistiklerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem personelEklemeToolStripMenuItem;
     }
 }

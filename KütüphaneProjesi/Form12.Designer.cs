@@ -63,6 +63,7 @@ namespace KütüphaneProjesi
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gorev = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.TextBox();
+            this.personelListelemeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -399,6 +400,8 @@ namespace KütüphaneProjesi
             // 
             // personelİşlemleriToolStripMenuItem
             // 
+            this.personelİşlemleriToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.personelListelemeToolStripMenuItem});
             this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
             this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
             this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
@@ -424,6 +427,13 @@ namespace KütüphaneProjesi
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 31);
             this.comboBox1.TabIndex = 139;
+            // 
+            // personelListelemeToolStripMenuItem
+            // 
+            this.personelListelemeToolStripMenuItem.Name = "personelListelemeToolStripMenuItem";
+            this.personelListelemeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personelListelemeToolStripMenuItem.Text = "Personel Listeleme";
+            this.personelListelemeToolStripMenuItem.Click += new System.EventHandler(this.personelListelemeToolStripMenuItem_Click);
             // 
             // Form12
             // 
@@ -504,5 +514,6 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.Label gorev;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
         private System.Windows.Forms.TextBox comboBox1;
+        private System.Windows.Forms.ToolStripMenuItem personelListelemeToolStripMenuItem;
     }
 }
