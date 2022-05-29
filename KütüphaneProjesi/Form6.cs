@@ -81,34 +81,50 @@ namespace KütüphaneProjesi
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(textBox5.Text);
-            baglanti2.Open();
-            string sorgusil = "DELETE FROM KitapBilgileri WHERE id=@id";
-            komut = new OleDbCommand(sorgusil, baglanti2);
-            komut.Parameters.AddWithValue("@id", id);
-            komut.ExecuteNonQuery();
-            baglanti2.Close();
-            MessageBox.Show("Tebrikler Kitap Başarıyla Silinmiştir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            kitaplistesi();
+            try
+            {
+                int id = int.Parse(textBox5.Text);
+                baglanti2.Open();
+                string sorgusil = "DELETE FROM KitapBilgileri WHERE id=@id";
+                komut = new OleDbCommand(sorgusil, baglanti2);
+                komut.Parameters.AddWithValue("@id", id);
+                komut.ExecuteNonQuery();
+                baglanti2.Close();
+                MessageBox.Show("Tebrikler Kitap Başarıyla Silinmiştir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                kitaplistesi();
+            }            
+            catch (Exception aciklama)
+            {
+                MessageBox.Show(aciklama.Message, "Kitap işlemleri");
+                baglanti2.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtkitapadi.Text != "" && txtyazari.Text != "" && txttürü.Text != "" && txtsayfasayisi.Text != "")
+            try
             {
+                if (txtkitapadi.Text != "" && txtyazari.Text != "" && txttürü.Text != "" && txtsayfasayisi.Text != "")
+                {
 
-                int id = int.Parse(textBox5.Text);
-                baglanti2.Open();
-                OleDbCommand komut = new OleDbCommand("update KitapBilgileri set KitapAdı='" + txtkitapadi.Text.ToString() + "',Yazarı='" + txtyazari.Text.ToString() + "',Türü='" + txttürü.Text.ToString() + "',SayfaSayısı='" + txtsayfasayisi.Text.ToString() + "' WHERE id=@id", baglanti2);
-                komut.Parameters.AddWithValue("@id", id);
-                komut.ExecuteNonQuery();
-                baglanti2.Close();
-                MessageBox.Show("Kitap Bilgisi Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                kitaplistesi();
+                    int id = int.Parse(textBox5.Text);
+                    baglanti2.Open();
+                    OleDbCommand komut = new OleDbCommand("update KitapBilgileri set KitapAdı='" + txtkitapadi.Text.ToString() + "',Yazarı='" + txtyazari.Text.ToString() + "',Türü='" + txttürü.Text.ToString() + "',SayfaSayısı='" + txtsayfasayisi.Text.ToString() + "' WHERE id=@id", baglanti2);
+                    komut.Parameters.AddWithValue("@id", id);
+                    komut.ExecuteNonQuery();
+                    baglanti2.Close();
+                    MessageBox.Show("Kitap Bilgisi Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    kitaplistesi();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Üye işlemleri");
+                baglanti2.Close();
             }
         }
 
@@ -128,21 +144,29 @@ namespace KütüphaneProjesi
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (txtarama.Text == "")
+            try
             {
-                kitaplistesi();
+                if (txtarama.Text == "")
+                {
+                    kitaplistesi();
+                }
+                else
+                {
+                    string sorgu = "Select * from KitapBilgileri where KitapAdı Like '%" + txtarama.Text + "%'";
+
+                    OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
+
+                    DataSet ds = new DataSet();
+
+                    adap.Fill(ds, "KitapBilgileri");
+
+                    this.dataGridView1.DataSource = ds.Tables[0];
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                string sorgu = "Select * from KitapBilgileri where KitapAdı Like '%" + txtarama.Text + "%'";
-
-                OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
-
-                DataSet ds = new DataSet();
-
-                adap.Fill(ds, "KitapBilgileri");
-
-                this.dataGridView1.DataSource = ds.Tables[0];
+                MessageBox.Show(aciklama.Message, "Kitap işlemleri");
+                baglanti2.Close();
             }
         }
 
