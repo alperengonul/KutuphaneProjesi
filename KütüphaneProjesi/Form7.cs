@@ -115,22 +115,30 @@ namespace KütüphaneProjesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text != "" && comboBox2.Text != "" && dateTimePicker1.Text != "")
+            try
             {
-                baglanti2.Open();
-                string sorgu = "INSERT INTO EmanetKitap(ÜyeAdıSoyadı,VerilenKitap,Tarih)VALUES(@ÜyeAdıSoyadı,@VerilenKitap,@Tarih)";
-                cmd = new OleDbCommand(sorgu, baglanti2);
-                cmd.Parameters.AddWithValue("@ÜyeAdıSoyadı", comboBox1.Text);
-                cmd.Parameters.AddWithValue("@VerilenKitap", comboBox2.Text);
-                cmd.Parameters.AddWithValue("@Tarih", dateTimePicker1.Text);
-                MessageBox.Show("Emanet Kitap Kaydı Başarılı.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmd.ExecuteNonQuery();
-                baglanti2.Close();
-                emanetkitaplistesi();
+                if (comboBox1.Text != "" && comboBox2.Text != "" && dateTimePicker1.Text != "")
+                {
+                    baglanti2.Open();
+                    string sorgu = "INSERT INTO EmanetKitap(ÜyeAdıSoyadı,VerilenKitap,Tarih)VALUES(@ÜyeAdıSoyadı,@VerilenKitap,@Tarih)";
+                    cmd = new OleDbCommand(sorgu, baglanti2);
+                    cmd.Parameters.AddWithValue("@ÜyeAdıSoyadı", comboBox1.Text);
+                    cmd.Parameters.AddWithValue("@VerilenKitap", comboBox2.Text);
+                    cmd.Parameters.AddWithValue("@Tarih", dateTimePicker1.Text);
+                    MessageBox.Show("Emanet Kitap Kaydı Başarılı.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cmd.ExecuteNonQuery();
+                    baglanti2.Close();
+                    emanetkitaplistesi();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Üye işlemleri");
+                baglanti2.Close();
             }
 
         }
@@ -150,21 +158,29 @@ namespace KütüphaneProjesi
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text != "" && comboBox2.Text != "" && dateTimePicker1.Text != "")
+            try
             {
+                if (comboBox1.Text != "" && comboBox2.Text != "" && dateTimePicker1.Text != "")
+                {
 
-                int id = int.Parse(textBox5.Text);
-                baglanti2.Open();
-                OleDbCommand komut = new OleDbCommand("update EmanetKitap set ÜyeAdıSoyadı='" + comboBox1.Text.ToString() + "',VerilenKitap='" + comboBox2.Text.ToString() + "',Tarih='" + dateTimePicker1.Text.ToString() + "' WHERE id=@id", baglanti2);
-                komut.Parameters.AddWithValue("@id", id);
-                komut.ExecuteNonQuery();
-                baglanti2.Close();
-                MessageBox.Show("Bilgiler Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                emanetkitaplistesi();
+                    int id = int.Parse(textBox5.Text);
+                    baglanti2.Open();
+                    OleDbCommand komut = new OleDbCommand("update EmanetKitap set ÜyeAdıSoyadı='" + comboBox1.Text.ToString() + "',VerilenKitap='" + comboBox2.Text.ToString() + "',Tarih='" + dateTimePicker1.Text.ToString() + "' WHERE id=@id", baglanti2);
+                    komut.Parameters.AddWithValue("@id", id);
+                    komut.ExecuteNonQuery();
+                    baglanti2.Close();
+                    MessageBox.Show("Bilgiler Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    emanetkitaplistesi();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Emanet Kitap işlemleri");
+                baglanti2.Close();
             }
         }
 
@@ -178,22 +194,30 @@ namespace KütüphaneProjesi
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (txtarama.Text == "")
+            try
             {
-                emanetkitaplistesi();
+                if (txtarama.Text == "")
+                {
+                    emanetkitaplistesi();
+                }
+                else
+                {
+                    string sorgu = "Select * from EmanetKitap where ÜyeAdıSoyadı Like '%" + txtarama.Text + "%'";
+
+                    OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
+
+                    DataSet ds = new DataSet();
+
+                    adap.Fill(ds, "EmanetKitap");
+
+                    this.dataGridView1.DataSource = ds.Tables[0];
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                string sorgu = "Select * from EmanetKitap where ÜyeAdıSoyadı Like '%" + txtarama.Text + "%'";
-
-                OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
-
-                DataSet ds = new DataSet();
-
-                adap.Fill(ds, "EmanetKitap");
-
-                this.dataGridView1.DataSource = ds.Tables[0];
+                MessageBox.Show(aciklama.Message, "Emanet Kitap işlemleri");
             }
+
         }
 
         private void üyeİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
