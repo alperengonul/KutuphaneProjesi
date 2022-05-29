@@ -75,27 +75,34 @@ namespace KütüphaneProjesi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtkitapadi.Text != "" && txtyazari.Text != "" && txttürü.Text != "" && txtsayfasayısı.Text != "")
+            try
             {
-                string sorgu = "INSERT INTO KitapBilgileri(KitapAdı,Yazarı,Türü,SayfaSayısı)VALUES(@KitapAdı,@Yazarı,@Türü,@SayfaSayısı)";
-                cmd = new OleDbCommand(sorgu, bgl.bagla());
-                cmd.Parameters.AddWithValue("@KitapAdı", txtkitapadi.Text);
-                cmd.Parameters.AddWithValue("@Yazarı", txtyazari.Text);
-                cmd.Parameters.AddWithValue("@Türü", txttürü.Text);
-                cmd.Parameters.AddWithValue("@SayfaSayısı", txtsayfasayısı.Text);
-                MessageBox.Show("Kitap Başarıyla Eklenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                cmd.ExecuteNonQuery();
-            }
-            else
+                if (txtkitapadi.Text != "" && txtyazari.Text != "" && txttürü.Text != "" && txtsayfasayısı.Text != "")
+                {
+                    string sorgu = "INSERT INTO KitapBilgileri(KitapAdı,Yazarı,Türü,SayfaSayısı)VALUES(@KitapAdı,@Yazarı,@Türü,@SayfaSayısı)";
+                    cmd = new OleDbCommand(sorgu, bgl.bagla());
+                    cmd.Parameters.AddWithValue("@KitapAdı", txtkitapadi.Text);
+                    cmd.Parameters.AddWithValue("@Yazarı", txtyazari.Text);
+                    cmd.Parameters.AddWithValue("@Türü", txttürü.Text);
+                    cmd.Parameters.AddWithValue("@SayfaSayısı", txtsayfasayısı.Text);
+                    MessageBox.Show("Kitap Başarıyla Eklenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    cmd.ExecuteNonQuery();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                txtkitapadi.Clear();
+                txtsayfasayısı.Clear();
+                txttürü.Clear();
+                txtyazari.Clear();
+                txtkitapadi.Focus();
+            }           
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Kitap işlemleri");       
             }
-            txtkitapadi.Clear();
-            txtsayfasayısı.Clear();
-            txttürü.Clear();
-            txtyazari.Clear();
-            txtkitapadi.Focus();
-           
+
         }
 
         private void üyeİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
