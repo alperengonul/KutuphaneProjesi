@@ -34,6 +34,7 @@
             this.kitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.emanetKitapİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.istatistiklerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtadres = new System.Windows.Forms.TextBox();
             this.lbladres = new System.Windows.Forms.Label();
@@ -58,7 +59,6 @@
             this.lblcinsiyet = new System.Windows.Forms.Label();
             this.lblarama = new System.Windows.Forms.Label();
             this.txtarama = new System.Windows.Forms.TextBox();
-            this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +112,13 @@
             this.istatistiklerToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.istatistiklerToolStripMenuItem.Text = "İstatistikler";
             this.istatistiklerToolStripMenuItem.Click += new System.EventHandler(this.istatistiklerToolStripMenuItem_Click);
+            // 
+            // çıkışToolStripMenuItem
+            // 
+            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
+            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
@@ -386,13 +393,6 @@
             this.txtarama.Size = new System.Drawing.Size(204, 31);
             this.txtarama.TabIndex = 124;
             this.txtarama.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // çıkışToolStripMenuItem
-            // 
-            this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
-            this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.çıkışToolStripMenuItem.Text = "Çıkış";
-            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // Form4
             // 

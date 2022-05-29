@@ -86,6 +86,8 @@ namespace KütüphaneProjesi
 
         private void button2_Click(object sender, EventArgs e)
         {
+           try
+            { 
             int id = int.Parse(textBox5.Text);
             baglanti2.Open();
             string sorgusil = "DELETE FROM ÜyeBilgileri WHERE id=@id";
@@ -95,25 +97,39 @@ namespace KütüphaneProjesi
             baglanti2.Close();
             MessageBox.Show("Tebrikler Üye Başarıyla Silinmiştir.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             üyelistesi();
+            }
+            catch (Exception aciklama)
+            {
+                MessageBox.Show(aciklama.Message, "üye işlemleri");
+                baglanti2.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (txtüyeadsoyad.Text != "" && txttc.Text != "" && txttel.Text != "" && txtemail.Text != "" && txtyaş.Text != "" && txtadres.Text != "" && cmbcinsiyet.Text!="")
+            try
             {
+                if (txtüyeadsoyad.Text != "" && txttc.Text != "" && txttel.Text != "" && txtemail.Text != "" && txtyaş.Text != "" && txtadres.Text != "" && cmbcinsiyet.Text != "")
+                {
 
-                int id = int.Parse(textBox5.Text);
-                baglanti2.Open();
-                OleDbCommand komut = new OleDbCommand("update ÜyeBilgileri set Adsoyad='" + txtüyeadsoyad.Text.ToString() + "',TcNo='" + txttc.Text.ToString() + "',TelefonNumarası='" + txttel.Text.ToString() + "',Email='" + txtemail.Text.ToString() + "',Yaş='" + txtyaş.Text.ToString() + "',Adres='" + txtadres.Text.ToString() + "',Cinsiyet='" + cmbcinsiyet.Text.ToString() + "' WHERE id=@id", baglanti2);
-                komut.Parameters.AddWithValue("@id", id);
-                komut.ExecuteNonQuery();
-                baglanti2.Close();
-                MessageBox.Show("Bilgiler Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                üyelistesi();
+                    int id = int.Parse(textBox5.Text);
+                    baglanti2.Open();
+                    OleDbCommand komut = new OleDbCommand("update ÜyeBilgileri set Adsoyad='" + txtüyeadsoyad.Text.ToString() + "',TcNo='" + txttc.Text.ToString() + "',TelefonNumarası='" + txttel.Text.ToString() + "',Email='" + txtemail.Text.ToString() + "',Yaş='" + txtyaş.Text.ToString() + "',Adres='" + txtadres.Text.ToString() + "',Cinsiyet='" + cmbcinsiyet.Text.ToString() + "' WHERE id=@id", baglanti2);
+                    komut.Parameters.AddWithValue("@id", id);
+                    komut.ExecuteNonQuery();
+                    baglanti2.Close();
+                    MessageBox.Show("Bilgiler Başarıyla Güncellenmiştir.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    üyelistesi();
+                }
+                else
+                {
+                    MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception aciklama)
             {
-                MessageBox.Show("Tüm Alanları Doldurunuz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(aciklama.Message, "Üye işlemleri");
+                baglanti2.Close();
             }
         }
 
@@ -142,24 +158,33 @@ namespace KütüphaneProjesi
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (txtarama.Text == "")
+            try
             {
-                üyelistesi();
-            }
-            else
+
+
+                if (txtarama.Text == "")
+                {
+                    üyelistesi();
+                }
+                else
+                {
+                    string sorgu = "Select * from ÜyeBilgileri where AdSoyad Like '%" + txtarama.Text + "%'";
+
+                    OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
+
+                    DataSet ds = new DataSet();
+
+                    adap.Fill(ds, "ÜyeBilgileri");
+
+                    this.dataGridView1.DataSource = ds.Tables[0];
+                }
+            }          
+            catch (Exception aciklama)
             {
-                string sorgu = "Select * from ÜyeBilgileri where AdSoyad Like '%" + txtarama.Text + "%'";
-
-                OleDbDataAdapter adap = new OleDbDataAdapter(sorgu, bgl.bagla());
-
-                DataSet ds = new DataSet();
-
-                adap.Fill(ds, "ÜyeBilgileri");
-
-                this.dataGridView1.DataSource = ds.Tables[0];
+                MessageBox.Show(aciklama.Message, "Üye işlemleri");           
             }
 
-        }
+}
 
         private void üyeİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
