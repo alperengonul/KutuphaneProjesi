@@ -60,9 +60,9 @@ namespace KütüphaneProjesi
             this.txttel = new System.Windows.Forms.TextBox();
             this.lbltel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.gorev = new System.Windows.Forms.Label();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gorev = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -397,18 +397,12 @@ namespace KütüphaneProjesi
             this.menuStrip1.TabIndex = 126;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // comboBox1
+            // personelİşlemleriToolStripMenuItem
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "emanetçi",
-            "güvenlik"});
-            this.comboBox1.Location = new System.Drawing.Point(274, 313);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(207, 31);
-            this.comboBox1.TabIndex = 152;
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
             // 
             // gorev
             // 
@@ -422,19 +416,20 @@ namespace KütüphaneProjesi
             this.gorev.TabIndex = 151;
             this.gorev.Text = "Görev :";
             // 
-            // personelİşlemleriToolStripMenuItem
+            // comboBox1
             // 
-            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
-            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
-            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
+            this.comboBox1.Location = new System.Drawing.Point(274, 314);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(207, 31);
+            this.comboBox1.TabIndex = 139;
             // 
             // Form12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 674);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.gorev);
             this.Controls.Add(this.lblarama);
             this.Controls.Add(this.txtarama);
@@ -447,6 +442,7 @@ namespace KütüphaneProjesi
             this.Controls.Add(this.lblnot);
             this.Controls.Add(this.btnsil);
             this.Controls.Add(this.btnguncelle);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtadres);
             this.Controls.Add(this.lbladres);
             this.Controls.Add(this.txtyaş);
@@ -505,8 +501,8 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.TextBox txttel;
         private System.Windows.Forms.Label lbltel;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label gorev;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.TextBox comboBox1;
     }
 }

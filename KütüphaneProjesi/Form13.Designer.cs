@@ -52,9 +52,9 @@ namespace KütüphaneProjesi
             this.lblemail = new System.Windows.Forms.Label();
             this.txttc = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.lblgorev = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.personelİşlemleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblgorev = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -292,6 +292,13 @@ namespace KütüphaneProjesi
             this.menuStrip1.TabIndex = 106;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // personelİşlemleriToolStripMenuItem
+            // 
+            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
+            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
+            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
+            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            // 
             // lblgorev
             // 
             this.lblgorev.AutoSize = true;
@@ -306,23 +313,12 @@ namespace KütüphaneProjesi
             // 
             // comboBox1
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "emanetçi",
-            "güvenlik"});
-            this.comboBox1.Location = new System.Drawing.Point(313, 357);
+            this.comboBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(113)))), ((int)(((byte)(87)))), ((int)(((byte)(71)))));
+            this.comboBox1.Location = new System.Drawing.Point(313, 358);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(207, 31);
-            this.comboBox1.TabIndex = 121;
-            // 
-            // personelİşlemleriToolStripMenuItem
-            // 
-            this.personelİşlemleriToolStripMenuItem.Name = "personelİşlemleriToolStripMenuItem";
-            this.personelİşlemleriToolStripMenuItem.Size = new System.Drawing.Size(111, 20);
-            this.personelİşlemleriToolStripMenuItem.Text = "Personel İşlemleri";
-            this.personelİşlemleriToolStripMenuItem.Click += new System.EventHandler(this.personelİşlemleriToolStripMenuItem_Click);
+            this.comboBox1.TabIndex = 119;
             // 
             // Form13
             // 
@@ -330,10 +326,10 @@ namespace KütüphaneProjesi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 450);
             this.Controls.Add(this.txttel);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblgorev);
             this.Controls.Add(this.cmbcinsiyet);
             this.Controls.Add(this.lblcinsiyet);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtadres);
             this.Controls.Add(this.lbladres);
             this.Controls.Add(this.txtyaş);
@@ -383,7 +379,7 @@ namespace KütüphaneProjesi
         private System.Windows.Forms.TextBox txttc;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label lblgorev;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ToolStripMenuItem personelİşlemleriToolStripMenuItem;
+        private System.Windows.Forms.TextBox comboBox1;
     }
 }
