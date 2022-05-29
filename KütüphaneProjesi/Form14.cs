@@ -19,7 +19,7 @@ namespace KütüphaneProjesi
         private void üyelistesi()
         {
             OleDbDataAdapter veri = new OleDbDataAdapter();
-            veri = new OleDbDataAdapter("SELECT * FROM ÜyeBilgileri", bgl.bagla());
+            veri = new OleDbDataAdapter("SELECT * FROM AdminGirişBilgileri", bgl.bagla());
             DataTable doldur = new DataTable();
             veri.Fill(doldur);
             dataGridView1.DataSource = doldur;
